@@ -13,12 +13,14 @@ public class Piso {
     double precio;
     int numpiso;
     double superficie;
+    String direccion;
     
     
-    public Piso(double p, int n, double s) {
+    public Piso(double p, int n, double s, String d) {
         precio = p;
         numpiso = n;
         superficie = s;
+        direccion = d;
     }
     
     public void actualizarPrecio(double p) {
@@ -33,6 +35,10 @@ public class Piso {
         superficie = s;
     }
     
+    public void actualizarDireccion(String d) {
+        direccion = d;
+    }
+    
     public double getPrecio() {
         return precio;
     }
@@ -45,9 +51,13 @@ public class Piso {
         return superficie;
     }
     
+    public String getDireccion() {
+        return direccion;
+    }
+    
     @Override
     public String toString() {
-        return "Piso: " + numpiso + "\n" + "Precio: " + precio + "\n" + "Superficie: " + superficie + "\n";
+        return "Piso: " + numpiso + "\n" + "Direccion: " + direccion +"\n" + "Precio: " + precio + "\n" + "Superficie: " + superficie + "\n";
     }
     
 }
