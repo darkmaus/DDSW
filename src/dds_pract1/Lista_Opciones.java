@@ -10,16 +10,19 @@ package dds_pract1;
  * @author aleivaca9.alumnes
  */
 public class Lista_Opciones {
-    String[] OpcionesPrincipales;
-    OpcionesPrincipales = new String[5];
-    
-    
-    String[] OpcionesClientes;
-    OpcionesClientes = new String[5];
-    
-    String[] OpcionesPisos;
-    OpcionesPisos = new String [5]
-
+    String[] opcionesPrincipales = new String[5];
+    opcionesPrincipales[0] = "Area Clientes";
+    opcionesPrincipales[0] = "Area Pisos";
+    opcionesPrincipales[0] = "Lista de pisos";
+    opcionesPrincipales[0] = "Salir"
+    String[] opcionesClientes= new String[5];
+    opcionesClientes[0] = "Registrar nuevo cliente";
+    opcionesClientes[1] = "Editar información clientes";
+    opcionesClientes[2] = "Salir"
+    String[] OpcionesPisos = new String [5];
+    OpcionesPisos[0] = "Registrar nuevo piso";
+    OpcionesPisos[1] = "Editar informacion piso";
+    OpcionesPiso[2] = "Salir";
     public String[] getOpcionesPrincipales() {
         return OpcionesPrincipales;
     }
