@@ -19,22 +19,34 @@ public class Cliente {
         nombre = name;
         DNI = dni;
     }
+    
     public void actualizarnombre(String name) {
         nombre = name;
     }
+    
     public void actualizardni(int dni) {
         DNI = dni;
     }
+    
     public void actualizartel(int num) {
         numerotel = num;
     }
+    
     public String getNombre() {
         return nombre;
     }
+    
     public int getDNI() {
         return DNI;
     }
+    
     public int getNumero() {
         return numerotel;
+    }
+    
+    @Override
+    public String toString() {
+        String salida =  "Nombre: " + nombre + "\n" +"Numero de telefono: " + numerotel + "\n" + "DNI: " + DNI + "\n";
+        return salida;
     }
 }
