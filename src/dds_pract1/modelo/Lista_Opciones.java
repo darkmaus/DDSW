@@ -10,49 +10,51 @@ package dds_pract1.modelo;
  * @author aleivaca9.alumnes
  */
 public class Lista_Opciones {
-    String[] opcionesPrincipales;
-    String[] opcionesClientes;
-    String[] OpcionesPisos;
+    String opcionesPrincipales;
+    String opcionesClientes;
+    String opcionesPisos;
     
     public Lista_Opciones ()
     {
-        opcionesPrincipales = new String[5];
-        opcionesPrincipales[0] = "Area Clientes";
-        opcionesPrincipales[1] = "Area Pisos";
-        opcionesPrincipales[2] = "Lista de pisos";
-        opcionesPrincipales[3] = "Salir";
-        opcionesClientes= new String[5];
-        opcionesClientes[0] = "Registrar nuevo cliente";
-        opcionesClientes[1] = "Editar información clientes";
-        opcionesClientes[2] = "Salir";
-        OpcionesPisos = new String [5];
-        OpcionesPisos[0] = "Registrar nuevo piso";
-        OpcionesPisos[1] = "Editar informacion piso";
-        OpcionesPisos[2] = "Salir";
+        opcionesPrincipales = "c - Area Clientes"   + "\n" +
+        "p - Area Pisos"        + "\n" +
+        "l - Lista de pisos"    + "\n" +
+        "q - Salir";
+        opcionesClientes= "Registrar nuevo cliente" + "\n" +
+        "Editar información clientes"   + "\n" +
+        "Salir";
+        opcionesPisos = "Registrar nuevo piso"  + "\n" +
+        "Editar informacion piso"    + "\n" +
+        "Salir";
     }
     
-    public String[] getOpcionesPrincipales() {
+    public String getOpcionesPrincipales() {
         return opcionesPrincipales;
     }
 
-    public String[] getOpcionesClientes() {
+    public String getOpcionesClientes() {
         return opcionesClientes;
     }
 
-    public String[] getOpcionesPisos() {
-        return OpcionesPisos;
+    public String getOpcionesPisos() {
+        return opcionesPisos;
     }
 
-    public void setOpcionesPrincipales(String[] OpcionesPrincipales) {
+    
+    /*
+    Volia preguntar perque necessitem aquests sets?
+    - pregunta en Sistach -
+    */
+    public void setOpcionesPrincipales(String OpcionesPrincipales) {
         this.opcionesPrincipales = OpcionesPrincipales;
     }
 
-    public void setOpcionesClientes(String[] OpcionesClientes) {
+    public void setOpcionesClientes(String OpcionesClientes) {
         this.opcionesClientes = OpcionesClientes;
     }
 
-    public void setOpcionesPisos(String[] OpcionesPisos) {
-        this.OpcionesPisos = OpcionesPisos;
+    public void setOpcionesPisos(String OpcionesPisos) {
+        this.opcionesPisos = OpcionesPisos;
     }
     
     
