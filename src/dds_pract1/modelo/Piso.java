@@ -23,6 +23,7 @@ public class Piso {
         numpiso = n;
         superficie = s;
         direccion = d;
+        llistaVisitas = new ArrayList<Cliente> ();
     }
     public Piso() {
         precio = 0;
@@ -68,16 +69,16 @@ public class Piso {
         llistaVisitas.add(c);
     }
     public String ShowVisitas() {
-        String salida = "";
+        String salida = "Lista de visitas: ";
         for (int i = 0; i < llistaVisitas.size(); ++i) {
-            salida += i + " " + llistaVisitas.get(i);
+            salida += llistaVisitas.get(i) + "\n";
         }
         return salida;
     }
     
     @Override
     public String toString() {
-        String salida = "Piso: " + numpiso + "\n" + "Direccion: " + direccion +"\n" + "Precio: " + precio + "\n" + "Superficie: " + superficie + "\n";
+        String salida = "Direccion: " + direccion + "\n" + "Piso: " + numpiso + "\n" + "Precio: " + precio + "\n" + "Superficie: " + superficie + "\n";
         return salida;
     }
     
